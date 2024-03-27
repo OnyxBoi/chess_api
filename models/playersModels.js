@@ -16,6 +16,10 @@ const Player = db.define("players",
             type: DataTypes.STRING,
             allowNull: false
         },
+        title: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
         nbGames: {
             type: DataTypes.INTEGER,
             allowNull: false
