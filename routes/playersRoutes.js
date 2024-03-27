@@ -8,5 +8,4 @@ router.post('/', playerController.createPlayer);
 router.get("/:id", playerController.getPlayerById);
 
 
-
 module.exports = router;
