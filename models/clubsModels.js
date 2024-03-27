@@ -8,10 +8,6 @@ const Clubs = db.define("clubs",
             type: DataTypes.STRING,
             allowNull: false
         },
-        listPlayers: {
-            type: DataTypes.ARRAY,
-            allowNull: false
-        },
         nbPlayers: {
             type: DataTypes.INTEGER,
             allowNull: false
