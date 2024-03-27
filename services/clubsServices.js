@@ -6,15 +6,15 @@ async function createClub(club) {
 
 
 async function getClubById(id) {
-  return await Clubs.findByPk(id);
+    return await Clubs.findByPk(id);
 }
 
 async function getAllClubs(criterias = {}) {
     const where = {};
-    if (criterias.name){
+    if (criterias.name) {
         where.name = criterias.name;
     }
-    if (criterias.nbPlayers){
+    if (criterias.nbPlayers) {
         where.nbPlayers = criterias.nbPlayers;
     }
 

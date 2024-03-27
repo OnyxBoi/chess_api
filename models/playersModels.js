@@ -39,4 +39,8 @@ const Player = db.define("players",
     }
 );
 
+const { Clubs } = require("./clubsModels");
+
+Player.belongsTo(Clubs)
+
 module.exports = { Player };
