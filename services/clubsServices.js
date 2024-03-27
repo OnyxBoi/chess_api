@@ -6,7 +6,7 @@ async function createClub(club) {
 
 
 async function getClubById(id) {
-  return await Club.findByPk(id);
+  return await Clubs.findByPk(id);
 }
 
 async function getAllClubs(criterias = {}) {
