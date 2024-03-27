@@ -18,12 +18,12 @@ async function getClubById(req, res) {
 async function getAllClubs(req, res) {
     try {
         const { name, nbPlayers } = req.query;
-    
+
         const clubs = await clubsServices.getAllClubs({ name, nbPlayers });
         res.json(clubs);
-      } catch (err) {
+    } catch (err) {
         res.status(500).json({ message: err.message });
-      }
+    }
 }
 
 async function createClub(req, res) {
