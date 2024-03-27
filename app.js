@@ -9,7 +9,7 @@ const port = 3000
 
 app.use(express.json())
 
-app.use("api/v1/players", playerRouter)
+app.use("/api/v1/players", playerRouter)
 
 const { createPlayer } = require('./services/playerServices');
 
@@ -30,4 +30,3 @@ db.sync()
             console.log(`Serveur running, triple moooooonstre on http://localhost:${port}`);
         })
     })
-
