@@ -1,7 +1,7 @@
-const { Club } = require("../models/clubsModels");
+const { Clubs } = require("../models/clubsModels");
 
 async function createClub(club) {
-    await Club.create(club)
+    await Clubs.create(club)
 }
 
 
@@ -13,4 +13,4 @@ async function createClub(club) {
 
 // }
 
-module.exports = { createPlayer };
+module.exports = { createClub };

@@ -2,10 +2,14 @@ const express = require('express')
 
 const { db } = require('./models/db');
 
+const clubsRouter = require ("./routes/clubsRoutes");
+
 const app = express()
 const port = 3000
 
 app.use(express.json())
+
+app.use("/api/v1/clubs", clubsRouter)
 
 
 db.sync()

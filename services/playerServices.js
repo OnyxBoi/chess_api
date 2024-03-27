@@ -1,7 +1,7 @@
 const { Player } = require("../models/playersModels");
 
 async function createPlayer(player) {
-    await player.create(Player)
+    await Player.create(player)
 }
 
 
