@@ -15,8 +15,4 @@ const Clubs = db.define("clubs",
     }
 );
 
-const { Player } = require("./playersModels");
-
-Clubs.hasMany(Player)
-
 module.exports = { Clubs };
