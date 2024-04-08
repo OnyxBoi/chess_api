@@ -4,7 +4,7 @@
   - Ouvrir un invit de commande depuis ce dossier
   - Tapez la commande suivante dans l'invit de commande :
 ```
->>> npm instal
+>>> npm install
 ```
 
 # Lancement
